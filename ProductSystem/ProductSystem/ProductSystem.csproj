@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EDA08E6C-AB9F-428B-902D-2EA281981FF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProductSystem</RootNamespace>
+    <AssemblyName>ProductSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.29\Assemblies\v4.8\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add\AddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\AddClient.designer.cs">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\AddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\AddOrder.designer.cs">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\AddProduct.designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Currentuserpwdedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Currentuserpwdedit.Designer.cs">
+      <DependentUpon>Currentuserpwdedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllOrder.designer.cs">
+      <DependentUpon>AllOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TouristsHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TouristsHome.designer.cs">
+      <DependentUpon>TouristsHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logistics_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistics_Department.designer.cs">
+      <DependentUpon>Logistics_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="Production_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production_Department.designer.cs">
+      <DependentUpon>Production_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marketing_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marketing_Department.designer.cs">
+      <DependentUpon>Marketing_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_info.designer.cs">
+      <DependentUpon>Manager_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySqlHelper.cs" />
+    <Compile Include="ProductStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductStorage.designer.cs">
+      <DependentUpon>ProductStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Select\SelectClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select\SelectClient.designer.cs">
+      <DependentUpon>SelectClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select\SelectProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select\SelectProduct.designer.cs">
+      <DependentUpon>SelectProduct.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add\AddClient.resx">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\AddOrder.resx">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Currentuserpwdedit.resx">
+      <DependentUpon>Currentuserpwdedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllOrder.resx">
+      <DependentUpon>AllOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TouristsHome.resx">
+      <DependentUpon>TouristsHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistics_Department.resx">
+      <DependentUpon>Logistics_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production_Department.resx">
+      <DependentUpon>Production_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marketing_Department.resx">
+      <DependentUpon>Marketing_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_info.resx">
+      <DependentUpon>Manager_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductStorage.resx">
+      <DependentUpon>ProductStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select\SelectClient.resx">
+      <DependentUpon>SelectClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select\SelectProduct.resx">
+      <DependentUpon>SelectProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
