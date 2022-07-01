@@ -88,28 +88,29 @@
 
 以下为重要文件介绍：
 
->----./ `【当前目录】`
->|----Business by.py `【Python脚本,用于生成海量订单，产品，客户】`
->|----数据库备份.sql `【数据库备份文件，如果云数据库失效,需自己搭建数据库，直接执行sql语句即可生成数据】`
->|----MySQL引用/ `【开发引用文件】`
->|    |----MySql.Data.dll `【C#开发需要引用的文件】 `
->|    |----MySqlHelper.cs `【C#开发需要引用的文件】`
->|----MySQL驱动安装/`【必装环境】`
->|    |----mysql-connector-net-8.0.29.msi `【EXE运行前必须安装的驱动】`
->|----ProductSystem.exe `【生成的EXE文件】` 
->|----ProductSystem_over.zip `【项目源码】`
->|----其他环境/`【存放开发环境,可以选择安装与否】`
->|    |----Navicat 16/`【Navicat 数据库管理工具】`
->|    |    |----Navicat16 Cracker.exe `【激活工具】`
->|    |    |----navicat160_premium_cs_x64.exe `【Navicat 16 安装包】`
->|    |    |----Navicat_2048bit_rsa_private_key.pem `【激活密钥】`
->|    |----ndp48-devpack-chs.exe `【.NET 4.8 安装包】`
->|    |----python-3.10.4-amd64.exe `【Python 3.10 安装包】`
->|    |----VisualStudioSetup.exe `【Visual Studio 2022 安装包 】`
->|----简易生成管理系统.md `【简介文件】`
->|----项目图标素材/ `【产品 文档图片依赖随材】`
->|    |---- ..... 
-
+```c#
+----./ `【当前目录】`
+|----Business by.py `【Python脚本,用于生成海量订单，产品，客户】`
+|----数据库备份.sql `【数据库备份文件，如果云数据库失效,需自己搭建数据库，直接执行sql语句即可生成数据】`
+|----MySQL引用/ `【开发引用文件】`
+|    |----MySql.Data.dll `【C#开发需要引用的文件】 `
+|    |----MySqlHelper.cs `【C#开发需要引用的文件】`
+|----MySQL驱动安装/`【必装环境】`
+|    |----mysql-connector-net-8.0.29.msi `【EXE运行前必须安装的驱动】`
+|----ProductSystem.exe `【生成的EXE文件】` 
+|----ProductSystem_over.zip `【项目源码】`
+|----其他环境/`【存放开发环境,可以选择安装与否】`
+|    |----Navicat 16/`【Navicat 数据库管理工具】`
+|    |    |----Navicat16 Cracker.exe `【激活工具】`
+|    |    |----navicat160_premium_cs_x64.exe `【Navicat 16 安装包】`
+|    |    |----Navicat_2048bit_rsa_private_key.pem `【激活密钥】`
+|    |----ndp48-devpack-chs.exe `【.NET 4.8 安装包】`
+|    |----python-3.10.4-amd64.exe `【Python 3.10 安装包】`
+|    |----VisualStudioSetup.exe `【Visual Studio 2022 安装包 】`
+|----简易生成管理系统.md `【简介文件】`
+|----项目图标素材/ `【产品 文档图片依赖随材】`
+|    |---- ..... 
+```
 ##  Visual Studio 开发准备
 
 ### 一 、安装`mysql-connector-net-8.0.29`【必装驱动】
